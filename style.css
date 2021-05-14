@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#cta-text {
+  z-index: 2;
+  position: relative;
+  min-height: 50vh;
+  background: #5200ff;
+  color: #fff;
+  text-align: center;
+}
+
+#cta-text h1 {
+  margin-top: 0;
+  padding-top: 6.75rem;
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem;
+  font-weight: normal;
+  margin-bottom: 5.125rem;
+}
+
+#cta-text p {
+  font-size: 1.5rem;
+  padding-bottom: 7.0625rem;
+  margin-bottom: 0;
+}
+
+#cta-text::after {
+  z-index: -1;
+  opacity: 0.22;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("./slp-bg.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form {
+  min-height: 50vh;
+  padding-top: 5.125rem;
+  padding-bottom: 6.5625rem;
+  max-width: 80%;
+  margin-inline: auto;
+}
+
+form .input-container:first-of-type {
+  margin-bottom: 2.5rem;
+}
+
+form label {
+  font-size: 1.125rem;
+  margin-bottom: 0.875rem;
+}
+
+form input:not([type="submit"]) {
+  /* Name and email input */
+  font-size: inherit;
+  background: #ededed;
+  border: 1px solid #c7c7c7;
+  width: 100%;
+  height: 4.0625rem;
+  margin-top: 0.875rem;
+  padding: 0;
+}
+
+form #inputs-container {
+  margin-bottom: 3.8125rem;
+}
+
+form input[type="submit"] {
+  font-family: inherit;
+  font-size: 1.125rem;
+  color: #fff;
+  background: #5200ff;
+  border: none;
+  width: 100%;
+  height: 3.9375rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  #cta-text {
+    min-height: 60vh;
+  }
+  form {
+    min-height: 40vh;
+    padding-bottom: initial;
+  }
+  form input[type="submit"] {
+    min-width: 11.6875rem;
+    width: 30%;
+  }
+  #inputs-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #inputs-container .input-container:first-of-type {
+    margin-bottom: initial;
+  }
+  #inputs-container .input-container {
+    width: 80%;
+    margin-right: 2.4375rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #cta-text {
+    text-align: right;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #cta-text #cta-text-container {
+    max-width: 66%;
+  }
+  #cta-text,
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100vh;
+  }
+  form {
+    padding-top: 0;
+    min-width: 35%;
+  }
+  form #inputs-container {
+    display: initial;
+  }
+  form #inputs-container .input-container:first-of-type {
+    margin-bottom: 2.5rem;
+  }
+  form #inputs-container .input-container {
+    width: initial;
+    margin-right: initial;
+  }
+}
+/*# sourceMappingURL=style.css.map */
